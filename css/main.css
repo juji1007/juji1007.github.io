@@ -43,10 +43,6 @@
        text-align: center;
        background-color: blue;
        text-align: center;
-       background: -webkit-linear-gradient(right blue green);
-       background: -moz-linear-gradient(right blue green);
-       background: -o-linear-gradient(right blue green);
-       background: linear-gradient(to left blue green);
      }
      .menulink, .submenulink {
         text-decoration:none;
