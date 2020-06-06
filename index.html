@@ -21,6 +21,11 @@ author_profile: true
        width: 900px;
        
      }
+     #top-menu ul {
+       list-style-type: none;
+       margin: 0px;
+       padding: 0px; 
+     }
      
      #top-menu ul li {
        list-style: none;
@@ -39,17 +44,32 @@ author_profile: true
         width: 200px;
         font-weight: bold;
      }
-      #topMenu .menuLink:hover {
-        color: red;
-     }
      .menulink{
        color: #05f000;
+     }
+     .topmenulink:hover .menulink {
+        color: red;
+        background-color: #4d4d4d;
      }
      .submenulink {
        color: green;
        background-color: white;
        border: solid 1px black;
+       margin-top: -1px;
      }
+     .submenu {
+       position: absolute;
+       height: 0px;
+       overflow: hidden;
+     }
+     .topmenulink:hover .submenu{
+        height: 93px;
+     }
+     .submenuLink:hover {
+       color: red;
+       background-color: #dddddd;
+     }
+
      
     </style>
   
@@ -66,23 +86,20 @@ author_profile: true
           <nav id="top-menu">
             <div class="top">
               <ul class="menu">
-                <li><a class="menulink" href="#">첫번째</a></li>
+                <li class="topmenulink"><a class="menulink" href="#">첫번째</a></li>
                   <ul class="submenu">
                     <li><a class="submenuLink>123</a></li>
                     <li><a class="submenuLink>456</a></li>
                     <li><a class="submenuLink>789</a></li>
                   </ul>
-                <li><a class="menulink" href="#">두번째</a></li>
-                <li><a class="menulink" href="#">세번째</a></li>
-                <li><a class="menulink" href="#">네번째</a></li>
+                <li class="topmenulink"><a class="menulink" href="#">두번째</a></li>
+                <li class="topmenulink"><a class="menulink" href="#">세번째</a></li>
+                <li class="topmenulink"><a class="menulink" href="#">네번째</a></li>
               </ul>
             </div>
           </nav>
           
-          <div id="second-top">
-            <h1 id="logo">
-              <img src="logo.jpg" alt="web">
-            </h1>
+          
                   
         </header>
         <section>
